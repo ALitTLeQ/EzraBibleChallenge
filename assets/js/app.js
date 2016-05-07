@@ -5,6 +5,7 @@
 
     function init() {
         questions = [];
+        haveTested = [];
         loadData('assets/data.json');
         nextQuestion();
 
@@ -18,7 +19,7 @@
     });
     
     $("#ansBtn").click(function () {
-        $("#answer").fadeIn();
+        $("#answer").css('visibility','visible ');
     });
 
     function loadData(url) {
@@ -54,6 +55,7 @@
 
             if (haveTested.length >= QuestionNum) {
                 alert("全部考完了！");
+                init();
                 return;
             }
         }
@@ -61,7 +63,7 @@
 
         $("#question").text(questions[randNum].Q);
         $("#answer").text(questions[randNum].A);
-        $("#answer").hide();
+        $("#answer").css('visibility','hidden');
 
         haveTested.push(randNum);
 

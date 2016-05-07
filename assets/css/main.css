@@ -2605,11 +2605,11 @@
 		background-size: auto,							cover;
 		height: 100%;
 		left: 0;
-		opacity: 0;
+		opacity: 0.2;
 		position: fixed;
 		top: 0;
 		width: 100%;
-		z-index: -1;
+		z-index: -1; 
 	}
 
 		.main-bg.active {
@@ -2816,13 +2816,13 @@
 		/* Main BG */
 
 			.main-bg {
-				display: none;
+				/*display: none;*/
 			}
 
 		/* Main */
 
 			.main .image.primary {
-				display: block;
+				display: none;
 				margin: 0 0 4em 0;
 			}
 
