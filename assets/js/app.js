@@ -21,6 +21,14 @@
     $("#ansBtn").click(function () {
         $("#answer").css('visibility','visible ');
     });
+    
+    $(document).keydown(function(event){
+        if( event.which == 13 ) {
+            if (questions.length > 0) {
+                nextQuestion();
+            }
+        }
+    });
 
     function loadData(url) {
         var result;
@@ -39,6 +47,7 @@
         });
 
         $.each(result, function (question, answer) {
+            console.info(question)
             questions.push({
                 Q: question,
                 A: answer
