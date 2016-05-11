@@ -21,7 +21,7 @@
     $("#ansBtn").click(function () {
         $("#answer").css('visibility','visible ');
     });
-    
+/*    
     $(document).keydown(function(event){
         if( event.which == 13 ) {
             if (questions.length > 0) {
@@ -30,6 +30,7 @@
             }
         }
     });
+*/
 
     function loadData(url) {
         var result;
