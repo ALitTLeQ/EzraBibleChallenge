@@ -21,16 +21,13 @@
     $("#ansBtn").click(function () {
         $("#answer").css('visibility','visible ');
     });
-/*    
     $(document).keydown(function(event){
-        if( event.which == 13 ) {
+        if( event.which == 114 ) {
             if (questions.length > 0) {
                 nextQuestion();
-                $("#answer").css('visibility','hidden');
             }
         }
     });
-*/
 
     function loadData(url) {
         var result;
