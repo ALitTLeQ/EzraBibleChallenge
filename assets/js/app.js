@@ -22,7 +22,7 @@
         $("#answer").css('visibility','visible ');
     });
     $(document).keydown(function(event){
-        if( event.which == 114 ) {
+        if( event.which == 113 ) {
             if (questions.length > 0) {
                 nextQuestion();
             }
