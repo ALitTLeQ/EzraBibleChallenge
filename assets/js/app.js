@@ -26,6 +26,7 @@
         if( event.which == 13 ) {
             if (questions.length > 0) {
                 nextQuestion();
+                $("#answer").css('visibility','hidden');
             }
         }
     });
